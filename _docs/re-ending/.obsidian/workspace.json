@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "RE-Ending Feature List"
             }
+          },
+          {
+            "id": "3eb76c35685ac414",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Module System Requirements.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Module System Requirements"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Features/RE-Ending Feature List.md",
+                "file": "Module System Requirements.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for RE-Ending Feature List"
+              "title": "Backlinks for Module System Requirements"
             }
           },
           {
@@ -113,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Features/RE-Ending Feature List.md",
+                "file": "Module System Requirements.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from RE-Ending Feature List"
+              "title": "Outgoing links from Module System Requirements"
             }
           },
           {
@@ -142,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Features/RE-Ending Feature List.md",
+                "file": "Module System Requirements.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of RE-Ending Feature List"
+              "title": "Outline of Module System Requirements"
             }
           }
         ]
@@ -168,13 +183,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "24deb6e4244e965e",
+  "active": "3eb76c35685ac414",
   "lastOpenFiles": [
+    "Module System Requirements.md",
+    "Features/RE-Ending Feature List.md",
     "zzz_attachments/Pasted image 20250614142442.png.import",
     "zzz_attachments/Pasted image 20250614142442.png",
     "Implementation Notes/How to implement custom resources in Godot.md",
     "zzz_attachments",
-    "Features/RE-Ending Feature List.md",
     "Implementation Notes",
     "Features",
     "Welcome.md"

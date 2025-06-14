@@ -11,6 +11,10 @@ Reference: https://www.prydwen.gg/etheria-restart/guides/module-system
 
 ![[Pasted image 20250614142442.png]]
 
+prototype module data structure doesn't really support sorting. let's use a new DS that can sort easily. 
+
+[[Module System Requirements]]
+
 # Shell System
 
 Reference: https://www.prydwen.gg/etheria-restart/guides/shell-system 
