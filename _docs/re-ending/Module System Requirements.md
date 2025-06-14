@@ -23,3 +23,10 @@
 8. When a module is powered up, on every multiples of 3, it will gain an increment to a random substat
 	1. if the module has less than 4 substats, it will unlock a new substat first
 
+
+
+Draft - Lowfi Mockup
+
+https://www.figma.com/design/oQSmcQBtrCIXkQrx7oYZSI/Untitled?node-id=1-3&t=Iuw7mKT8YZl0ly1S-0
+
+![[Pasted image 20250614211828.png]]
