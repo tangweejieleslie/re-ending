@@ -1,4 +1,7 @@
-[gd_scene format=3 uid="uid://diqyk7sho1bag"]
+[gd_scene load_steps=3 format=3 uid="uid://diqyk7sho1bag"]
+
+[ext_resource type="ButtonGroup" uid="uid://dq53s4068fotn" path="res://scenes/base/modules/experiment/v2/filter_by_substat.tres" id="1_1f3j5"]
+[ext_resource type="ButtonGroup" uid="uid://cre64q2r6i78j" path="res://scenes/base/modules/experiment/v2/modules_button_group.tres" id="2_88cj0"]
 
 [node name="ModuleV2" type="Control"]
 layout_mode = 3
@@ -7,3 +10,287 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="ModuleInterface" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ModuleLayout" type="VBoxContainer" parent="ModuleInterface"]
+layout_mode = 2
+
+[node name="FilterLayout" type="VBoxContainer" parent="ModuleInterface/ModuleLayout"]
+layout_mode = 2
+
+[node name="FilterBySet" type="HBoxContainer" parent="ModuleInterface/ModuleLayout/FilterLayout"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ModuleInterface/ModuleLayout/FilterLayout/FilterBySet"]
+layout_mode = 2
+text = "Filter by Module Set"
+
+[node name="FilterByMainStat" type="HBoxContainer" parent="ModuleInterface/ModuleLayout/FilterLayout"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ModuleInterface/ModuleLayout/FilterLayout/FilterByMainStat"]
+layout_mode = 2
+text = "Filter by Main Stat"
+
+[node name="FilterBySubStat" type="HBoxContainer" parent="ModuleInterface/ModuleLayout/FilterLayout"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ModuleInterface/ModuleLayout/FilterLayout/FilterBySubStat"]
+layout_mode = 2
+text = "Filter by Sub Stat"
+
+[node name="StatsIcon" type="HBoxContainer" parent="ModuleInterface/ModuleLayout/FilterLayout/FilterBySubStat"]
+layout_mode = 2
+
+[node name="ATK" type="Button" parent="ModuleInterface/ModuleLayout/FilterLayout/FilterBySubStat/StatsIcon"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_1f3j5")
+text = "ATK"
+
+[node name="DEF" type="Button" parent="ModuleInterface/ModuleLayout/FilterLayout/FilterBySubStat/StatsIcon"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_1f3j5")
+text = "DEF"
+
+[node name="SPD" type="Button" parent="ModuleInterface/ModuleLayout/FilterLayout/FilterBySubStat/StatsIcon"]
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("1_1f3j5")
+text = "SPD"
+
+[node name="SortingLayout" type="HBoxContainer" parent="ModuleInterface/ModuleLayout/FilterLayout"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ModuleInterface/ModuleLayout/FilterLayout/SortingLayout"]
+layout_mode = 2
+text = "Sort by:"
+
+[node name="OptionButton" type="OptionButton" parent="ModuleInterface/ModuleLayout/FilterLayout/SortingLayout"]
+layout_mode = 2
+item_count = 3
+popup/item_0/text = "Attack"
+popup/item_0/id = 0
+popup/item_1/text = "Defense"
+popup/item_1/id = 1
+popup/item_2/text = "Speed"
+popup/item_2/id = 2
+
+[node name="ModulesContainer" type="GridContainer" parent="ModuleInterface/ModuleLayout"]
+layout_mode = 2
+columns = 5
+
+[node name="Module" type="Button" parent="ModuleInterface/ModuleLayout/ModulesContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("2_88cj0")
+text = "This is a Module"
+
+[node name="Module2" type="Button" parent="ModuleInterface/ModuleLayout/ModulesContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("2_88cj0")
+text = "This is a Module"
+
+[node name="Module3" type="Button" parent="ModuleInterface/ModuleLayout/ModulesContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("2_88cj0")
+text = "This is a Module"
+
+[node name="Module4" type="Button" parent="ModuleInterface/ModuleLayout/ModulesContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("2_88cj0")
+text = "This is a Module"
+
+[node name="Module5" type="Button" parent="ModuleInterface/ModuleLayout/ModulesContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("2_88cj0")
+text = "This is a Module"
+
+[node name="Module6" type="Button" parent="ModuleInterface/ModuleLayout/ModulesContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("2_88cj0")
+text = "This is a Module"
+
+[node name="Module7" type="Button" parent="ModuleInterface/ModuleLayout/ModulesContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("2_88cj0")
+text = "This is a Module"
+
+[node name="Module8" type="Button" parent="ModuleInterface/ModuleLayout/ModulesContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("2_88cj0")
+text = "This is a Module"
+
+[node name="Module9" type="Button" parent="ModuleInterface/ModuleLayout/ModulesContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("2_88cj0")
+text = "This is a Module"
+
+[node name="Module10" type="Button" parent="ModuleInterface/ModuleLayout/ModulesContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("2_88cj0")
+text = "This is a Module"
+
+[node name="Module11" type="Button" parent="ModuleInterface/ModuleLayout/ModulesContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("2_88cj0")
+text = "This is a Module"
+
+[node name="Module12" type="Button" parent="ModuleInterface/ModuleLayout/ModulesContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("2_88cj0")
+text = "This is a Module"
+
+[node name="Module13" type="Button" parent="ModuleInterface/ModuleLayout/ModulesContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("2_88cj0")
+text = "This is a Module"
+
+[node name="Module14" type="Button" parent="ModuleInterface/ModuleLayout/ModulesContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("2_88cj0")
+text = "This is a Module"
+
+[node name="Module15" type="Button" parent="ModuleInterface/ModuleLayout/ModulesContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+toggle_mode = true
+button_group = ExtResource("2_88cj0")
+text = "This is a Module"
+
+[node name="Label" type="Label" parent="ModuleInterface"]
+layout_mode = 2
+text = "       "
+
+[node name="ModuleDetails" type="VBoxContainer" parent="ModuleInterface"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ModuleInterface/ModuleDetails"]
+layout_mode = 2
+text = "Module Name"
+
+[node name="StatContainer" type="HBoxContainer" parent="ModuleInterface/ModuleDetails"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ModuleInterface/ModuleDetails/StatContainer"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+text = "Attack:"
+
+[node name="Value" type="Label" parent="ModuleInterface/ModuleDetails/StatContainer"]
+layout_mode = 2
+text = "50"
+
+[node name="Suffix" type="Label" parent="ModuleInterface/ModuleDetails/StatContainer"]
+layout_mode = 2
+text = "%"
+
+[node name="SubStatsContainer" type="VBoxContainer" parent="ModuleInterface/ModuleDetails"]
+layout_mode = 2
+
+[node name="StatContainer" type="HBoxContainer" parent="ModuleInterface/ModuleDetails/SubStatsContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ModuleInterface/ModuleDetails/SubStatsContainer/StatContainer"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+text = "Attack:"
+
+[node name="Value" type="Label" parent="ModuleInterface/ModuleDetails/SubStatsContainer/StatContainer"]
+layout_mode = 2
+text = "50"
+
+[node name="Suffix" type="Label" parent="ModuleInterface/ModuleDetails/SubStatsContainer/StatContainer"]
+layout_mode = 2
+text = "%"
+
+[node name="StatContainer2" type="HBoxContainer" parent="ModuleInterface/ModuleDetails/SubStatsContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ModuleInterface/ModuleDetails/SubStatsContainer/StatContainer2"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+text = "Attack:"
+
+[node name="Value" type="Label" parent="ModuleInterface/ModuleDetails/SubStatsContainer/StatContainer2"]
+layout_mode = 2
+text = "50"
+
+[node name="Suffix" type="Label" parent="ModuleInterface/ModuleDetails/SubStatsContainer/StatContainer2"]
+layout_mode = 2
+text = "%"
+
+[node name="StatContainer3" type="HBoxContainer" parent="ModuleInterface/ModuleDetails/SubStatsContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ModuleInterface/ModuleDetails/SubStatsContainer/StatContainer3"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+text = "Attack:"
+
+[node name="Value" type="Label" parent="ModuleInterface/ModuleDetails/SubStatsContainer/StatContainer3"]
+layout_mode = 2
+text = "50"
+
+[node name="Suffix" type="Label" parent="ModuleInterface/ModuleDetails/SubStatsContainer/StatContainer3"]
+layout_mode = 2
+text = "%"
+
+[node name="StatContainer4" type="HBoxContainer" parent="ModuleInterface/ModuleDetails/SubStatsContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ModuleInterface/ModuleDetails/SubStatsContainer/StatContainer4"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+text = "Attack:"
+
+[node name="Value" type="Label" parent="ModuleInterface/ModuleDetails/SubStatsContainer/StatContainer4"]
+layout_mode = 2
+text = "50"
+
+[node name="Suffix" type="Label" parent="ModuleInterface/ModuleDetails/SubStatsContainer/StatContainer4"]
+layout_mode = 2
+text = "%"
+
+[node name="ModuleActions" type="HBoxContainer" parent="ModuleInterface/ModuleDetails"]
+layout_mode = 2
+
+[node name="PowerUp" type="Button" parent="ModuleInterface/ModuleDetails/ModuleActions"]
+layout_mode = 2
+text = "Power Up"
+
+[node name="Randomize" type="Button" parent="ModuleInterface/ModuleDetails/ModuleActions"]
+layout_mode = 2
+text = "Randomize (Test Function)"
