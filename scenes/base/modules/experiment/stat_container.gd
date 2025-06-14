@@ -7,7 +7,10 @@ func get_value():
 	return $Value.text
 
 func update_value(value):
-	$Value.text = value
+	$Value.text = str(value)
 
 func toggle_visibility(state):
 	visible = state
+
+func get_value_in_number():
+	return $Value.to_int()

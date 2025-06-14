@@ -129,12 +129,8 @@ layout_mode = 2
 layout_mode = 2
 text = "Upgrade"
 
-[node name="Randomize" type="Button" parent="ModuleContainer/Actions"]
-layout_mode = 2
-text = "Randomize"
-
 [node name="Cost" type="Label" parent="ModuleContainer/Actions"]
 layout_mode = 2
 text = "500"
 
-[connection signal="pressed" from="ModuleContainer/Actions/Randomize" to="." method="_on_upgrade_pressed"]
+[connection signal="pressed" from="ModuleContainer/Actions/Upgrade" to="." method="_on_upgrade_pressed"]
