@@ -296,3 +296,7 @@ text = "Power Up"
 [node name="Randomize" type="Button" parent="ModuleInterface/ModuleDetails/ModuleActions"]
 layout_mode = 2
 text = "Randomize (Test Function)"
+
+[node name="Node" type="Node" parent="."]
+
+[connection signal="pressed" from="ModuleInterface/ModuleDetails/ModuleActions/Randomize" to="." method="_on_randomize_pressed"]
