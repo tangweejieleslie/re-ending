@@ -30,3 +30,47 @@ Draft - Lowfi Mockup
 https://www.figma.com/design/oQSmcQBtrCIXkQrx7oYZSI/Untitled?node-id=1-3&t=Iuw7mKT8YZl0ly1S-0
 
 ![[Pasted image 20250614211828.png]]
+
+
+# New User Stories
+- modules can be equipped to units
+- the same module can be equipped to multiple units in different content
+
+
+
+
+---
+
+# Technical Implementation Notes
+
+1. Module Base Class
+	1. Set Type (single enum value)
+	2. Set Bonus (1,2,3)
+	3. Rarity
+	4. Main Stat
+		1. stat_type (enum)
+		2. stat_value
+	5. Sub Stats (list, up to 4)
+		1. stat_type (enum)
+		2. stat_value
+		3. upgrade_count (counter, up to 5)
+	6. Equipped (list)
+		1. which content
+		2. which monster 
+	7. Acquisition Time
+	8. Level
+2. Module List
+	1. can be sorted by
+		1. acquisition time
+		2. level
+		3. rarity
+		4. sub_stats (single sort)
+		5. set_bonus
+	2. can be filtered by
+		1. set_type
+		2. sub_stats 
+
+
+
+
+

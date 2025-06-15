@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://diqyk7sho1bag"]
+[gd_scene load_steps=4 format=3 uid="uid://diqyk7sho1bag"]
 
 [ext_resource type="ButtonGroup" uid="uid://dq53s4068fotn" path="res://scenes/base/modules/experiment/v2/filter_by_substat.tres" id="1_1f3j5"]
+[ext_resource type="Script" uid="uid://0yt2kff5xukm" path="res://scenes/base/modules/experiment/v2/module_v_2.gd" id="1_ni888"]
 [ext_resource type="ButtonGroup" uid="uid://cre64q2r6i78j" path="res://scenes/base/modules/experiment/v2/modules_button_group.tres" id="2_88cj0"]
 
 [node name="ModuleV2" type="Control"]
@@ -10,6 +11,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ni888")
 
 [node name="ModuleInterface" type="HBoxContainer" parent="."]
 layout_mode = 0
